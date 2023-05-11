@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(17, 50, 40);
+}
+h2{
+    position: relative;
+    font-size: 6em;
+    color: rgb(74, 99, 90);
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+    
+}
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #1c4739;
+        text-shadow: none;
+    }
+    18.1%,20.1%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #487365,
+        0 0 20px #487365,
+        0 0 40px #487365,
+        0 0 80px #487365,
+        0 0 160px #487365;
+    }
+}
